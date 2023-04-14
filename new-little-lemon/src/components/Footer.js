@@ -1,4 +1,4 @@
-import { Box, Container, SimpleGrid, Stack, Image, Text, Link, Flex} from "@chakra-ui/react"
+import { Box, Container, SimpleGrid, Stack, Image, Text, Link,} from "@chakra-ui/react"
 
 const Footer = () => {
 
@@ -16,25 +16,19 @@ const Footer = () => {
     return (
         <>
         <Box
-         backgroundColor="#edefee"
-         isDarkBackground
-         p={8}
-         alignItems="center"
-         spacing={8}
+        bg={'#edefee'}
         >
             <Container as={Stack} maxW={'6xl'} py={10}>
-                <SimpleGrid  columns={4} spacingX='40px' spacingY='20px' spacing={8}>
-                    <Stack spacing={6}>
-                        <Box>
-                            <Image
-                             src="/footerlogo.png"
-                             alt="Little Lemon footer logo"
-                             objectFit="cover"
-                             w="136px"
-                             h="240px"
-                             gap="4"
-                            />
-                        </Box>
+                <SimpleGrid  columns={{ base: 1, sm: 2, md: 4 }} spacing={8}>
+                    <Stack>
+                        <Image
+                            src="/footerlogo.png"
+                            alt="Little Lemon footer logo"
+                            objectFit="cover"
+                            w="136px"
+                            h="240px"
+                            gap="4"
+                        />
                     </Stack>
                     <Stack align={'flex-start'}>
                         <Text fontWeight={'500'} fontSize={'2xl'} mb={2}>Company</Text>
@@ -63,19 +57,8 @@ const Footer = () => {
                 </SimpleGrid>
             </Container>
         </Box>
-        <Box
-         backgroundColor="#edefee"
-         >
-            <Flex
-             alignItems={'center'}
-             justifyContent={'center'}
-             maxWidth={'1024px'}
-             margin={'0 auto'}
-             px={'12'}
-             heigh={'16'}
-            >
-                <Text>© 2023 Little Lemon Restaurant. All rights reserved</Text>
-            </Flex>
+        <Box bg={'#edefee'}>
+            <Text fontSize={'md'} textAlign={'center'}>© 2023 Little Lemon Restaurant. All rights reserved</Text>
         </Box>
         </>
     )
