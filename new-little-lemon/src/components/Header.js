@@ -15,13 +15,14 @@ const Header = () => {
 
     return (
         <>
-        <Container maxW={'full'} isDarkBackground bg={'#495e57'} >
+        <Container maxW={'full'} isDarkBackground bg={'#495e57'}>
         <Stack
           align={'center'}
           spacing={{ base: 8, md: 10 }}
           py={{ base: 20, md: 28 }}
           direction={{ base: 'column', md: 'row' }}
-          bg={'#495e57'}>
+          bg={'#495e57'}
+          >
           <Stack flex={1} spacing={{ base: 5, md: 10 }}>
             <Heading
               lineHeight={1.1}
@@ -57,6 +58,7 @@ const Header = () => {
                 Reserve a Table
             </Button>
           </Stack>
+          
           <Flex
             flex={1}
             justify={'center'}
@@ -76,7 +78,7 @@ const Header = () => {
                 align={'center'}
                 w={'100%'}
                 h={'100%'}
-                src={'/restaurantfood.jpg'}
+                src={require('../assets/Mario and Adrian A.jpg')}
               />
             </Box>
           </Flex>

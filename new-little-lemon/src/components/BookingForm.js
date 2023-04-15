@@ -31,13 +31,13 @@ const BookingForm = () => {
         <Flex
          isDarkBackground
          bg={'#495e57'}
-         py={16}
-         spacing={8}
          align={'center'}
          justify={'center'}
+         minH={'100vh'}
+         id="booking-form"
          >
-            <VStack spacing={8} width={800} py={12} px={6} bgColor={'#f4ce14'} rounded={'lg'}>
-                <Heading as="h1" id="booking-form" color={'#495e57'}>
+            <VStack spacing={8} mx={'auto'} maxW={'lg'} py={12} px={6} rounded={'lg'}>
+                <Heading as="h1"  color={'#edefee'}>
                     Reserve a Table
                 </Heading>
                 <Box p={8} rounded={'lg'} borderWidth={1} boxShadow={'lg'} backgroundColor={'gray.50'}>

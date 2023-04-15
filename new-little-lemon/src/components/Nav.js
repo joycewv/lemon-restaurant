@@ -60,13 +60,15 @@ const Nav = () => {
             justify={{ base: 'center', md: 'space-between' }}
             align={{ base: 'center', md: 'center' }}
             >
-                <Image src={require('../assets/logo.png')} alt={'logo'} width={'200'} height={'55'} />
+                <Link to="/">
+                    <Image src={require('../assets/logo.png')} alt={'logo'} width={'200'} height={'55'} />
+                </Link>
                 <Spacer />
                 <Stack spacing={8} fontSize={'lg'} direction={'row'} fontWeight={'bold'}>
                     <Link to="/">Home</Link>
                     <Link to="/about">About</Link>
                     <Link to="/menu">Menu</Link>
-                    <Link onClick={handleClick("booking")}>Reservations</Link>
+                    <Link to="/" onClick={handleClick("booking")}>Reservations</Link>
                     <Link to="/orderonlines">Order onlines</Link>
                     <Link to='/login'>Login</Link>
                 </Stack>

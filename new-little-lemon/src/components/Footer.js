@@ -21,14 +21,16 @@ const Footer = () => {
             <Container as={Stack} maxW={'6xl'} py={10}>
                 <SimpleGrid  columns={{ base: 1, sm: 2, md: 4 }} spacing={8}>
                     <Stack>
-                        <Image
-                            src="/footerlogo.png"
-                            alt="Little Lemon footer logo"
-                            objectFit="cover"
-                            w="136px"
-                            h="240px"
-                            gap="4"
-                        />
+                        <Link href={'/'}>
+                            <Image
+                                src="/footerlogo.png"
+                                alt="Little Lemon footer logo"
+                                objectFit="cover"
+                                w="136px"
+                                h="240px"
+                                gap="4"
+                            />
+                        </Link>
                     </Stack>
                     <Stack align={'flex-start'}>
                         <Text fontWeight={'500'} fontSize={'2xl'} mb={2}>Company</Text>
@@ -37,7 +39,7 @@ const Footer = () => {
                         <Link href={'/menu'}>Menu</Link>
                         <Link onClick={handleClick("booking")}>Reservations</Link>
                         <Link href={'/orderonline'}>Order onlines</Link>
-                        <Link href={'login'}>Login</Link>
+                        <Link href={'/login'}>Login</Link>
                     </Stack>
                     <Stack align={'flex-start'}>
                         <Text fontWeight={'500'} fontSize={'2xl'} mb={2}>Contact Us</Text>

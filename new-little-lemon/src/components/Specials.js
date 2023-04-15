@@ -1,4 +1,5 @@
-import { Box, Heading, VStack, Button, Spacer, Flex } from '@chakra-ui/react';
+import { Box, Heading, VStack, Button, Spacer, Flex,} from '@chakra-ui/react';
+import { Link } from 'react-router-dom';
 import SpecialsCard from './SpecialsCard'
 
 const menus  =[
@@ -23,39 +24,49 @@ const menus  =[
 ];
 
 const Specials = () => {
+
+    /*const handleClick =(onlinemenu) => () => {
+        const id = `${onlinemenu}`;
+        const element = document.getElementById(id);
+        if (element) {
+            element.scrollIntoView({
+                behavior: "smooth",
+                block: "start",
+            });
+        }
+    }*/
+
+
     return (
         <>
         <VStack
          isDarkBackground
          bg={'#edefee'}
-         p={12}
-         py={16}
-         alignItems=""
+         p={8}
+         maxW={'full'}
+         alignItems="flex-end"
          spacing={8}
          >
             <Box spacing={8} py={4}>
-                <Flex
-                 gap={'2'}
-                >
-                    <Heading
-                     as="h1"
-                     color={'#495e57'}
-                     >
-                        This Weeks Specials</Heading>
+                <Flex gap={'2'}>
+                    <Heading as="h1" color={'#495e57'}>This Weeks Specials</Heading>
                     <Spacer />
-                    <Button
-                     color={'#333333'}
-                     size={'lg'}
-                     bg={'#f4ce14'}
-                     _hover={{bg:'yellow.500'}}
-                     >
-                        Online Menu</Button>
+                    <Link to="/menu">
+                        <Button
+                        color={'#333333'}
+                        size={'lg'}
+                        bg={'#f4ce14'}
+                        _hover={{bg:'yellow.500'}}
+                        >
+                            Online Menu</Button>
+                    </Link>
                 </Flex>
             </Box>
             <Box
              display="grid"
              gridTemplateColumns="repeat(3,minmax(0,1fr))"
-             gridGap={8}>
+             gridGap={8}
+             minWidth={'900px'}>
                 {menus.map((menu) => (
                     <SpecialsCard
                     key={menu.title}
