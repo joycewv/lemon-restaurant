@@ -1,20 +1,20 @@
-# Booking a table on the Little Lemon website
+# Booking a table on the Little Lemon website v2.
 
 This project in the final project assessment of Front-End Developer Capstone Course for Meta Front-End Developer Professional Certificate Program on Coursera.
 
 ## Screenshot
 
 * Navbar and Hero section
-![nav and header](https://user-images.githubusercontent.com/114795700/224845658-e3100453-7739-4d5b-a641-ff39ceec3b6b.png)
+![NavBar and Hero section](https://user-images.githubusercontent.com/114795700/232182369-e5238b22-3f9d-4f12-ad00-b991242b5c6d.png)
 
 * Speciales
-![specials](https://user-images.githubusercontent.com/114795700/224845671-a9acd94a-efd5-4f25-80e0-1136f2d3ac85.png)
+![Specials](https://user-images.githubusercontent.com/114795700/232182372-309c6de6-ccd6-442d-ad2a-473a47b8678d.png)
 
 * Reservation form
-![reservation section](https://user-images.githubusercontent.com/114795700/224845686-b2403600-90a2-4b51-9d43-993795963296.png)
+![Reservation](https://user-images.githubusercontent.com/114795700/232182379-d9256857-820a-40c3-aab0-9c6d071de69f.png)
 
 * Footer
-![footer](https://user-images.githubusercontent.com/114795700/224845693-5612a826-7ea4-4959-80a6-c1347a04164b.png)
+![Footer](https://user-images.githubusercontent.com/114795700/232182390-21aee9bb-3f44-4542-864e-eb695d91c5ad.png)
 
 
 ### Tech Stack:
