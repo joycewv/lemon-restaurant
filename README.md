@@ -1,6 +1,8 @@
 # Booking a table on the Little Lemon website v3.
 
-This project in the final project assessment of Front-End Developer Capstone Course for Meta Front-End Developer Professional Certificate Program on Coursera.
+A restaurant website using multiple librairies and APIs, It helps restaurant owner engagement with their customers by providing them a better User Interface on the Web.
+
+This project was originally the final project assessment of Meta Front-End Developer Professional Certificate Program on Coursera.
 
 ## Screenshot
 
